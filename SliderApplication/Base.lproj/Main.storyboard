@@ -1,24 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SliderApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="地球" translatesAutoresizingMaskIntoConstraints="NO" id="csG-qz-odb">
+                                <rect key="frame" x="-83" y="559" width="558" height="558"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="270" translatesAutoresizingMaskIntoConstraints="NO" id="JFj-7A-ktJ">
+                                <rect key="frame" x="14" y="107" width="358" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" systemColor="systemTealColor"/>
+                                <connections>
+                                    <action selector="sliderMove:" destination="BYZ-38-t0r" eventType="valueChanged" id="tjy-Q2-1W1"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="櫻花樹" translatesAutoresizingMaskIntoConstraints="NO" id="KBS-3p-szi">
+                                <rect key="frame" x="108" y="773" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="櫻花樹" translatesAutoresizingMaskIntoConstraints="NO" id="a19-wo-ZfV">
+                                <rect key="frame" x="108" y="773" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="櫻花樹" translatesAutoresizingMaskIntoConstraints="NO" id="9YX-C8-8R5" userLabel="Sakura3">
+                                <rect key="frame" x="108" y="773" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="櫻花樹" translatesAutoresizingMaskIntoConstraints="NO" id="y06-gV-3S6">
+                                <rect key="frame" x="108" y="773" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="向日葵" translatesAutoresizingMaskIntoConstraints="NO" id="1ci-Rb-ROq">
+                                <rect key="frame" x="108" y="773" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="向日葵" translatesAutoresizingMaskIntoConstraints="NO" id="DUi-3P-3gk">
+                                <rect key="frame" x="118" y="783" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="向日葵" translatesAutoresizingMaskIntoConstraints="NO" id="e6Q-IX-619">
+                                <rect key="frame" x="128" y="793" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="向日葵" translatesAutoresizingMaskIntoConstraints="NO" id="3v6-5A-YXE">
+                                <rect key="frame" x="138" y="803" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="波斯菊" translatesAutoresizingMaskIntoConstraints="NO" id="DRY-OX-wTK">
+                                <rect key="frame" x="128" y="761" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="波斯菊" translatesAutoresizingMaskIntoConstraints="NO" id="QSa-4e-1o4">
+                                <rect key="frame" x="128" y="761" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="波斯菊" translatesAutoresizingMaskIntoConstraints="NO" id="alq-em-a38">
+                                <rect key="frame" x="128" y="761" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="波斯菊" translatesAutoresizingMaskIntoConstraints="NO" id="pUT-np-w7s">
+                                <rect key="frame" x="128" y="761" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="薰衣草" translatesAutoresizingMaskIntoConstraints="NO" id="Bs4-Mk-SsH">
+                                <rect key="frame" x="116" y="761" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="薰衣草" translatesAutoresizingMaskIntoConstraints="NO" id="Cq5-6f-eiD">
+                                <rect key="frame" x="119" y="761" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="薰衣草" translatesAutoresizingMaskIntoConstraints="NO" id="Axz-rl-EXo">
+                                <rect key="frame" x="140" y="761" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="薰衣草" translatesAutoresizingMaskIntoConstraints="NO" id="bNG-f2-K5S">
+                                <rect key="frame" x="128" y="761" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="踏青" translatesAutoresizingMaskIntoConstraints="NO" id="yGc-ci-Cwq">
+                                <rect key="frame" x="161" y="416" width="113" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="cosmos1" destination="pUT-np-w7s" id="w8E-nq-t5i"/>
+                        <outlet property="cosmos2" destination="DRY-OX-wTK" id="I8m-uV-FJV"/>
+                        <outlet property="cosmos3" destination="QSa-4e-1o4" id="iaK-8p-Cjq"/>
+                        <outlet property="cosmos4" destination="alq-em-a38" id="lT9-AZ-ZBX"/>
+                        <outlet property="earth" destination="csG-qz-odb" id="pQN-8K-Udy"/>
+                        <outlet property="lavender1" destination="Bs4-Mk-SsH" id="iM3-kd-bVF"/>
+                        <outlet property="lavender2" destination="Cq5-6f-eiD" id="IIY-um-CUc"/>
+                        <outlet property="lavender3" destination="Axz-rl-EXo" id="w81-5a-BDI"/>
+                        <outlet property="lavender4" destination="bNG-f2-K5S" id="IdO-H2-9b0"/>
+                        <outlet property="sakura1" destination="KBS-3p-szi" id="lLK-SK-x2y"/>
+                        <outlet property="sakura2" destination="a19-wo-ZfV" id="d2v-Dx-777"/>
+                        <outlet property="sakura3" destination="9YX-C8-8R5" id="6Oe-F4-NPC"/>
+                        <outlet property="sakura4" destination="y06-gV-3S6" id="NQ6-MZ-ixZ"/>
+                        <outlet property="slider" destination="JFj-7A-ktJ" id="94Q-O2-0li"/>
+                        <outlet property="sunflower1" destination="1ci-Rb-ROq" id="hJE-Tp-ytQ"/>
+                        <outlet property="sunflower2" destination="DUi-3P-3gk" id="HJv-pQ-beu"/>
+                        <outlet property="sunflower3" destination="e6Q-IX-619" id="XV1-eb-ZPa"/>
+                        <outlet property="sunflower4" destination="3v6-5A-YXE" id="Ldg-Uu-AfL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="向日葵" width="235" height="203"/>
+        <image name="地球" width="210" height="210"/>
+        <image name="櫻花樹" width="300" height="300"/>
+        <image name="波斯菊" width="187" height="242"/>
+        <image name="薰衣草" width="237" height="198"/>
+        <image name="踏青" width="113" height="186"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
